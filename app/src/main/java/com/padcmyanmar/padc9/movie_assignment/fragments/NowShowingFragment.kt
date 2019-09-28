@@ -45,7 +45,8 @@ class NowShowingFragment: BaseFragment(), EventItemDelegate {
     }
 
     override fun onTapEventItem(movieId: Int) {
-        startActivity(Intent(this.context,MoviesListDetailFragmentActivity::class.java))
+        //startActivity(Intent(this.context,MoviesListDetailFragmentActivity::class.java))
+        startActivity(MoviesListDetailFragmentActivity.newIntent(context!!,movieId))
     }
 
 }
