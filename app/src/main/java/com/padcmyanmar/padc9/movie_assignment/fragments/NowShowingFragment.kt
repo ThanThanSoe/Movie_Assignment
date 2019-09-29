@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.padcmyanmar.padc9.movie_assignment.R
 import com.padcmyanmar.padc9.movie_assignment.activities.MoviesListDetailFragmentActivity
@@ -29,6 +30,7 @@ class NowShowingFragment: BaseFragment(), EventItemDelegate {
         super.onViewCreated(view, savedInstanceState)
 
         var adapter = EventListAdapter(this)
+        LinearSnapHelper().attachToRecyclerView(rvMovies)
 
         val layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL,false)
         rvMovies.layoutManager = layoutManager

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.padcmyanmar.padc9.movie_assignment.R
 import com.padcmyanmar.padc9.movie_assignment.adapters.CastViewAdapter
 import com.padcmyanmar.padc9.movie_assignment.adapters.ScreenShotAdapter
@@ -51,5 +52,13 @@ class MoviesListDetailFragmentActivity : BaseActivity() {
 
     private fun bindData(movieVO: MoviesVO){
        movie_name.text = movieVO.movie_name
+        imdb.text = movieVO.imdb.toString()
+        rotten_tomato.text = movieVO.rotten_tomato.toString()
+        meta_centric.text = movieVO.meta_centric.toString()
+        detail.text = movieVO.overview
+      // Glide.with(itemView).load(data.poster).into(itemView.poster)
+        Glide.with(poster).load(movieVO.poster).into(poster)
+
+
     }
 }

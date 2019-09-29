@@ -28,6 +28,7 @@
             android:text="Genre/connor.2hur 25sec"
             android:layout_below="@+id/movie_name"
             android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -35,14 +36,16 @@
             android:id="@+id/imdb"
             android:text="7.5"
             android:layout_below="@id/genre"
-            android:layout_marginLeft="70dp"/>
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="5dp"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imdb_label"
             android:text="IMDB"
             android:layout_below="@+id/imdb"
-            android:layout_marginLeft="70dp"/>
+            android:layout_marginLeft="90dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,14 +53,15 @@
             android:id="@+id/rotten_tomato"
             android:text="79%"
             android:layout_below="@id/genre"
-            android:layout_marginLeft="150dp"/>
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rotten_tomato_label"
             android:text="Rottencentric"
             android:layout_below="@+id/rotten_tomato"
-            android:layout_marginLeft="150dp"/>
+            android:layout_marginLeft="160dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -65,21 +69,22 @@
             android:id="@+id/meta_centric"
             android:text="98%"
             android:layout_below="@id/genre"
-            android:layout_marginLeft="250dp"/>
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="5dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/meta_centric_label"
             android:text="metacentric"
             android:layout_below="@+id/meta_centric"
-            android:layout_marginLeft="250dp"/>
+            android:layout_marginLeft="270dp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/card_view"
             app:cardCornerRadius="30dp"
             android:layout_below="@+id/imdb_label"
-            android:layout_marginLeft="90dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="20dp">
             <ImageView
                 android:layout_width="200dp"
@@ -95,21 +100,25 @@
             android:layout_height="wrap_content"
             android:id="@+id/detail"
             android:text="agagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            android:layout_below="@+id/card_view"/>
+            android:layout_below="@+id/card_view"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/btn_buy_ticket"
             android:text="Buy Tickets"
             android:layout_below="@+id/detail"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttom"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cast"
             android:text="Cast"
-            android:layout_below="@+id/btn_buy_ticket"/>
+            android:layout_below="@+id/btn_buy_ticket"
+            android:layout_marginLeft="5dp"/>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
